@@ -1,0 +1,77 @@
+//
+//  PrefixHeader.pch
+//  ElectricBusinessPlatform
+//
+//  Created by Owen on 2020/5/18.
+//  Copyright © 2020 Owen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import "CommonImg.h"
+#import <UMCommon/UMCommon.h>
+#import <UMShare/UMShare.h>
+#import <UMSocialQQHandler.h>
+#import <UMSocialSinaHandler.h>
+#import <UMSocialWechatHandler.h>
+#import <UMAnalytics/MobClick.h>
+#import "AppGroup.h"
+#import "AFNetworking.h"
+#import "VCManger.h"
+#import "CommonNumber.h"
+#import "NetConfig.h"
+#import <SDWebImage.h>
+#import <WXApi.h>
+#import <WXApiObject.h>
+#import <WechatAuthSDK.h>
+#import "CommonPrompt.h"
+#import <POP.h>
+#import <YYWebImage/YYWebImage.h>
+#import <JPFPSStatus.h>
+#import <AliyunOSSiOS/AliyunOSSiOS.h>
+#import <AvoidCrash/AvoidCrash.h>
+#import <AlipaySDK/AlipaySDK.h>
+#import <ZLPhotoBrowser/ZLPhotoBrowser.h>
+#import "ASCollectionNode+SSExpand.h"
+#import "ASDisplayNode+SSExpand.h"
+#import "UIColor+SSExpand.h"
+#import "NSString+SSExpand.h"
+#import <UILabel+YBAttributeTextTapAction.h>
+#import "BaseModelManager.h"
+#import "NetWorkTask.h"
+#import "BaseResultObj.h"
+#import "DataManager.h"
+#import "SSAlterNodeManager.h"
+#import "NSDictionary+SSExpand.h"
+#import "ASCellNode+SSExpand.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <NIMSDK/NIMSDK.h>
+#import <NIMAVChat/NIMAVChat.h>
+#import "NIMKit.h"
+#import <YYImage.h>
+#import <YYText.h>
+#import <YYWebImage.h>
+#import <YYModel.h>
+#import <Masonry.h>
+#import "UIView+Toast.h"
+#import "UIView+SSExpand.h"
+#import <RealReachability.h>
+#import <JXPagingView/JXPagerView.h>
+#import <JXCategoryView.h>
+#import "NSString+SSExpand.h"
+#import <SVProgressHUD.h>
+#endif
+
+#endif /* PrefixHeader_pch */
